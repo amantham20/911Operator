@@ -28,16 +28,16 @@ function App() {
     <div className="App">
       {caseData.map((caseItem) => (
         <div key={caseItem.id} className="case-rectangle">
-          <div className="case-id">Case ID: {caseItem.id}</div>
-          <div className="container">
-            <div className="blue-rectangle"></div> {/* Blue rectangle */}
-            <ul>
-              <li>Location: {caseItem.location}</li>
-              <li>Dispatch: {caseItem.dispatched}</li>
-              <li>Situation: {caseItem.situation}</li>
-            </ul>
-          </div>
-        </div>
+          { caseItem.id  ? 
+          (<><div className="case-id">Case ID: {caseItem.id}</div><div className="container">
+              <div className="blue-rectangle"></div> {/* Blue rectangle */}
+              <ul>
+                <li>Location: {caseItem.location}</li>
+                <li>Dispatch: {caseItem.dispatched}</li>
+                <li>Situation: {caseItem.situation}</li>
+              </ul>
+            </div></>) : <></>}
+        </div> 
       ))}
     </div>
   );

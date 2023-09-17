@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
 import Dashboard from './Dashboard';
 
 import MainPage from './MainPage';
+import About from './About';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +22,7 @@ root.render(
           <Route index element={<MainPage />} />
           <Route path="/911Operator/emergency/:id" element={<Dashboard />} />
           <Route path="/911Operator/oldlayout" element={<App />} />
+          <Route path="/911Operator/About" element={<About />} />
         </Route>
       </Routes>
     </BrowserRouter>

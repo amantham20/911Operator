@@ -33,7 +33,7 @@ const CurrentEmergency = () => {
   <div key={caseItem.id} className="bg-white shadow-md rounded-md p-4 mb-4">
     <div className="flex items-center justify-between mb-2">
       <h2 className="text-lg font-semibold">Case ID: {caseItem.id}</h2>
-      <Link to="/emergency/{caseItem.id}" className="bg-blue-500 text-white rounded-full px-2 py-1">
+      <Link to={`/911Operator/emergency/${caseItem.id}`} className="bg-blue-500 text-white rounded-full px-2 py-1">
         Open Case
       </Link>
     </div>
@@ -62,8 +62,8 @@ const MainPage = () => {
 
         <div className="flex justify-center">
             <div className="w-1/2 text-center">
-                <div className="text-4xl font-bold mb-4">Welcome to Automated Emergency Center</div>
-                <div>Preview</div>
+                <div className="text-5xl font-bold mb-4">Welcome to SurgeSOS</div>
+                <div className='text-2xl'>an automated 911 operatior during caller traffic overload </div>
 
 
                 <div className="mt-4">
