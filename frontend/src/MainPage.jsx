@@ -22,14 +22,15 @@ const CurrentEmergency = () => {
           console.log(doc.data());
           casesArr.push({...doc.data(), id: doc.id})
         });
+        // caseData.reverse();
         setCaseData(casesArr);
       })
   
       return () => unsubscribe()
     }, []);
     return (
-        <div>
-{caseData.map((caseItem) => (
+        <div className='flex flex-col-reverse'>
+{caseData.reverse().map((caseItem) => (
   <div key={caseItem.id} className="bg-white shadow-md rounded-md p-4 mb-4">
     <div className="flex items-center justify-between mb-2">
       <h2 className="text-lg font-semibold">Case ID: {caseItem.id}</h2>
