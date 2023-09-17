@@ -9,11 +9,8 @@ The 911 emergency number is one of the most important numbers in the United Stat
 The 911 Operator is a way to solve this problem. You can call to this number and it will connect you with our AI voicebot. The voicebot will ask you about your emergency and will send the appropriate emergency services to your location. The voicebot will also give you instructions on how to help the person in need until the emergency services arrive.
 
 ## How we built it
-- Twilio API 
 - Google Cloud Platform 
-- Dialogflow
-- Python: Flask
+- Flutter
 - React, HTML, CSS, JavaScript
 - OpenAI
-- Google Maps 
 - Firebase
