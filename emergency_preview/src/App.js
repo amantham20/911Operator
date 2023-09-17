@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 
 
 
-import profilePreview from './components/ProfilePreview';
+// import profilePreview from './components/ProfilePreview';
 
-import Dashboard from './Dashboard';
+// import Dashboard from './Dashboard';
 
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+// import { Routes, Route, Outlet, Link } from "react-router-dom";
 
-function App() {
-  return (
-    <Routes>
-    <Route path="/">
-
-
-      <Route index element={<Dashboard />} />
+// function App() {
+//   return (
+//     <Routes>
+//     <Route path="/">
 
 
-    </Route>
-  </Routes>
-  );
-}
+//       <Route index element={<Dashboard />} />
 
-export default App;
+
+//     </Route>
+//   </Routes>
+//   );
+// }
+
+// export default App;

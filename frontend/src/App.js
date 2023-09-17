@@ -3,7 +3,7 @@ import { QuerySnapshot, collection, onSnapshot, query } from "firebase/firestore
 import React, { useState, useEffect } from "react";
 
 import { db } from "./firebase";
-import './App.css';
+
 
 function App() {
 

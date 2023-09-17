@@ -5,13 +5,24 @@ import App from './App';
 
 import profilePreview from './components/ProfilePreview';
 
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
 import Dashboard from './Dashboard';
+import MainPage from './MainPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+<>
+  {/* <Dashboard /> */}
+  <BrowserRouter>
+  <Routes>
+    <Route path="/">
+      <Route index element={<MainPage />} />
+      <Route path="/emergency/:id" element={<Dashboard />} />
+    </Route>
+  </Routes>
+  </BrowserRouter>
 
-  <Dashboard />
+</>
 
 );
 
