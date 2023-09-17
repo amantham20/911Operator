@@ -17,10 +17,10 @@ root.render(
 
     <BrowserRouter >
       <Routes>
-        <Route path="/">
+        <Route path="/911Operator">
           <Route index element={<MainPage />} />
-          <Route path="/emergency/:id" element={<Dashboard />} />
-          <Route path="/oldlayout" element={<App />} />
+          <Route path="/911Operator/emergency/:id" element={<Dashboard />} />
+          <Route path="/911Operator/oldlayout" element={<App />} />
         </Route>
       </Routes>
     </BrowserRouter>
